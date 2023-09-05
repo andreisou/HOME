@@ -1,0 +1,79 @@
+let g:mapleader=" "
+
+let g:is_posix = 1
+let g:netrw_banner=0
+let g:netrw_altv=1
+let g:netrw_alto=1
+let g:netrw_liststyle=3
+let g:netrw_rmdir_cmd="ssh USEPORT HOSTNAME rm -rf"
+
+set nocompatible
+set autoindent
+set autoread
+set backspace=indent,eol,start
+set breakindent
+set cindent
+set completeopt=menu,menuone,noselect
+set complete-=i
+set expandtab
+set history=1000
+set ignorecase
+set incsearch
+set isfname+=@-@
+set laststatus=0
+set lazyredraw
+"set list
+"set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,space:•
+set nohlsearch
+set nolangremap
+set nowrap
+set number
+set path+=**
+set relativenumber
+set ruler
+set scrolloff=1
+set shiftwidth=4
+set sidescroll=1
+set sidescrolloff=1
+set smartcase
+set smartindent
+set smarttab
+set softtabstop=8
+set splitbelow
+set splitright
+set tabstop=8
+set termguicolors
+set ttimeout
+set ttimeoutlen=100
+set undodir=$HOME/.vim/undo
+set undofile
+set viminfo=
+set nobackup
+set nowritebackup
+set noswapfile
+set wildmenu
+set cursorline
+
+filetype on
+filetype plugin on
+filetype indent on
+
+syntax on
+
+augroup filetype_gdscript
+    au!
+    au FileType gdscript setlocal noexpandtab tabstop=4 softtabstop=4
+augroup END
+
+augroup filetype_c
+    au!
+    au FileType c nnoremap <Leader>i :-1read $HOME/.vim/snippets/c/if<CR>jva{=
+    au FileType c nnoremap <Leader>w :-1read $HOME/.vim/snippets/c/while<CR>jva{=
+augroup END
+
+augroup filetype_netrw
+    au!
+    au FileType netrw setlocal number relativenumber
+augroup END
+
+nnoremap # m`:keepjumps normal! #``<cr>

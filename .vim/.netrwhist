@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/andrei'
+let g:netrw_dirhist_6='/home/andrei/.local'
+let g:netrw_dirhist_5='/home/andrei'
+let g:netrw_dirhist_4='/home/andrei/Development/mario'
+let g:netrw_dirhist_3='/home/andrei/.config/nvim/lua/core'
+let g:netrw_dirhist_2='/home/andrei/.config/nvim/lua'
+let g:netrw_dirhist_1='/home/andrei/.config/nvim'
+let g:netrw_dirhist_0='/home/andrei/Development/mario'
+let g:netrw_dirhist_9='/home/andrei/Development/mario/res/shader'
+let g:netrw_dirhist_8='/home/andrei/Development/mario'
