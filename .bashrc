@@ -1,8 +1,10 @@
-[[ $- != *i* ]] && return
+#!/usr/bin/env bash
+
+export EDITOR='emacsclient -c -a ""'
+export VISUAL='emacsclient -c -a ""'
 
 unset HISTFILE
 
-export EDITOR="emacsclient -c -a ''"
-export VISUAL="emacsclient -c -a ''"
-
 PS1='\u:\w$'
+
+alias e="$VISUAL"

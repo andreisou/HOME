@@ -22,8 +22,8 @@ set incsearch
 set isfname+=@-@
 set laststatus=0
 set lazyredraw
-"set list
-"set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,space:•
+set list
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,space:•
 set nohlsearch
 set nolangremap
 set nowrap
@@ -53,6 +53,8 @@ set nowritebackup
 set noswapfile
 set wildmenu
 set cursorline
+
+colorscheme habamax
 
 filetype on
 filetype plugin on
